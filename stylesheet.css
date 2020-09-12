@@ -1,0 +1,52 @@
+body
+{
+	background-color: #101010;
+	color: lightgray;
+	padding: 20px;
+	font-family: calibri, helvetica, sans-serif;
+}
+
+body, body *
+{
+	box-sizing: border-box;
+}
+
+h1, h2, h4
+{
+	color: #3399ff;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container > div
+{
+	padding: 10px;
+}
+
+.lineitem
+{
+	margin: 40px 10px;
+}
+
+#profile-photo
+{
+	width: 200px;
+	border: 2px solid lightgray;
+	border-radius: 4px;
+}
+
+#page
+{
+	width: 100%;
+	max-width: 800px;
+	border: 2px solid lightgray;
+	border-radius: 4px;
+	background-color: #303030;
+}
