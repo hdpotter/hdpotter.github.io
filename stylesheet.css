@@ -1,5 +1,6 @@
 body
 {
+	background-image: url("background.png");
 	background-color: #101010;
 	color: lightgray;
 	padding: 20px;
@@ -13,7 +14,17 @@ body, body *
 
 h1, h2, h4
 {
-	color: #3399ff;
+	color: #9999ff;
+}
+
+a:link, a:visited
+{
+	color: #ff5050;
+}
+
+a:hover
+{
+	color: #ff9900;
 }
 
 .container
@@ -30,9 +41,31 @@ h1, h2, h4
 	padding: 10px;
 }
 
+ul
+{
+	padding-left: 10px;
+}
+
+li
+{
+	margin: 10px;
+}
+
+.reference
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 .lineitem
 {
 	margin: 40px 10px;
+}
+
+.reftitle
+{
+	font-style: italic;
 }
 
 #profile-photo
