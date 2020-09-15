@@ -1,7 +1,7 @@
 body
 {
-	background-image: url("background.png");
-	background-color: #101010;
+	background-image: url("background-light.png");
+	background-color: #202020;
 	color: lightgray;
 	padding: 20px;
 	font-family: calibri, helvetica, sans-serif;
