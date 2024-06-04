@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh Potter</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+<link rel="stylesheet" href="/styles_software.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="nameplate">Hugh Potter</div>
+            <div class="epithet">Gamedev, Nanotech, Rust, and Music</div>
+            <a href="https://example.com"><div class="navbar-button">Home</div></a>
+            <a href="https://example.com/software/"><div class="navbar-button">Software</div></a>
+            <a href="https://example.com/academics/"><div class="navbar-button">Academics</div></a>
+            <a href="https://example.com/blog/"><div class="navbar-button">Blog</div></a>
+            <a href="https://example.com/about_me/"><div class="navbar-button">About Me</div></a>
+        </div>
+    </div>
+    <div class="content-outer">
+        <div class="content-inner">
+            
+<h1 class="software-post-title">
+    MFDn
+</h1>
+
+
+<div class="software-post-link"><a href="https:&#x2F;&#x2F;doi.org&#x2F;10.31274&#x2F;etd-180810-5421">https:&#x2F;&#x2F;doi.org&#x2F;10.31274&#x2F;etd-180810-5421</a></div>
+
+
+<div class="tech-list">
+    
+    <a href="/tech/fortran"><div class="tech-post">Fortran</div></a>
+    
+    <a href="/tech/cuda"><div class="tech-post">CUDA</div></a>
+    
+    <a href="/tech/c-c"><div class="tech-post">C&#x2F;C++</div></a>
+    
+    <a href="/tech/mpi"><div class="tech-post">MPI</div></a>
+    
+    <a href="/tech/openmp"><div class="tech-post">OpenMP</div></a>
+    
+</div>
+
+
+
+<p>MFDn, or Many-Fermion Dynamics for Nuclei, is a supercomputer code that can calculate properties of atomic nuclei and similar physical systems.</p>
+<p>It operates in two stages.  First, we construct a gigantic matrix spread across the nodes of the supercomputer.  This matrix describes the structure of a nuclear system like, say, an Oxygen-16 nucleus or a collection of neutrons bound together by an external force; we create it by assembling parts of smaller matrices that describe the interactions of small groups of protons and neutrons.  (As an analogy, if you know how one spring works, you can apply that knowledge to understand how a big collection of springs works.)</p>
+<p>Once we've constructed the matrix, we extract eigenvalues and eigenvectors from it, which tell information about its stable energy states.
+We use the Lanczos algorithm, which is somewhat similar to multiplying it by itself over and over until the result converges.</p>
+<p>MFDn is the work of many talented people; my contribution was to assist in adding GPU acceleration to a matrix decoder component.</p>
+
+
+            <div class="content-inner-last"></div>
+        </div>
+    </div>
+</body>
+</html>

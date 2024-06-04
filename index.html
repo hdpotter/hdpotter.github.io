@@ -1,116 +1,121 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
-
-<title>Hugh D. Potter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh Potter</title>
+    <link rel="stylesheet" href="/styles.css">
+     
 </head>
-
 <body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="nameplate">Hugh Potter</div>
+            <div class="epithet">Gamedev, Nanotech, Rust, and Music</div>
+            <a href="https://example.com"><div class="navbar-button">Home</div></a>
+            <a href="https://example.com/software/"><div class="navbar-button">Software</div></a>
+            <a href="https://example.com/academics/"><div class="navbar-button">Academics</div></a>
+            <a href="https://example.com/blog/"><div class="navbar-button">Blog</div></a>
+            <a href="https://example.com/about_me/"><div class="navbar-button">About Me</div></a>
+        </div>
+    </div>
+    <div class="content-outer">
+        <div class="content-inner">
+            
 
-<div class="container">
-<div id="page">
-
-<div class="container">
-<div>
-<h1> Hugh D. Potter </h1>
-<p>
-    <a href="mailto:hdpotter@iastate.edu">hdpotter@iastate.edu</a> | 
-    <a href="cv/cv.html">CV</a>
-</p>
-<!-- <p> Ph.D. student in Computer Science at <a href="https://www.iastate.edu/">Iowa State University</a></p>
-<p> Advised by <a href="http://web.cs.iastate.edu/~jil/">James I. Lathrop</a> and <a href="http://web.cs.iastate.edu/~lutz/">Jack H. Lutz</a></p> -->
-</div>
-
-<div>
-<img src="photo.png" id="profile-photo"> 
-</div>
-</div>
-
-<div class="lineitem">
-<h2> Degrees </h2>
-<p>Ph.D., Computer Science, Iowa State University, 2022</p>
-<p>Ph.D., Nuclear Physics, Iowa State University, 2016</p>
-<p>B.A., Physics, Grinnell College, 2010</p>
-</div>
-
-<div class="lineitem">
-<h2> Interests </h2>
-<p> My primary interest is in game developement in Rust.  I'm also interested in molecular programming, DNA nanotechnology, and proof engineering.
-<!-- <p> My primary interest is in molecular programming and DNA nanotechnology.  I'm also interested in proof engineering and game development.</p> -->
-</div>
-
-<div class="lineitem">
-<h2>Software Projects</h2>
-<h3>SturdyHex (Rust)</h3>
-<a href="https://github.com/hdpotter/sturdy_hex">https://github.com/hdpotter/sturdy_hex</a>
-A hex grid library for Rust.
-
-<h3>Untitled Voxel Game (Unity/C#)</h3>
-<a href="https://rememberthecant.itch.io/voxel-demo">https://rememberthecant.itch.io/voxel-demo</a>
-A voxel game in Unity, currently under development.  Current features:
-<ul>
-    <li>Persistent, editable, infinite world</li>
-    <li>Crafting and inventory systems</li>
-    <li>Modding system to load items, voxels, and crafting recipes from JSON</li>
-</ul>
-
-<h3>Untitled Colony Defense Game (Rust, Unity/C#)</h3>
-A colony defense game, currently under development.  Initial Unity versions explored 3D terrain generated on a Voronoi grid, but I decided to go with 
-
-In the third and current version, I scrapped Unity for Rust and am rebuilding from the ground up.
-<ul>
-    <ui>efficient ECS-based architecture</ui>
-    <ui></ui>
-    <ui></ui>
-</ul>
-
-<h3>ALCH</h3>
-A domain-specific language for chemical systems.
-<a href="https://doi.org/10.4230/LIPIcs.DNA.2020.6">https://doi.org/10.4230/LIPIcs.DNA.2020.6</a>
-<ul>
-    <li>Compiles the imperative ALCH language into a chemical system</li>
-    <li>Simulates and visualizes the resulting chemical system</li>
-</ul>
-
-<h3>MolCog</h3>
+<div id="conway" style="font-family: monospace">
 
 </div>
 
-<div class="lineitem">
-<h2> Selected Publications </h2>
+<!-- why hello there, brave explorer! -->
+<script>
+    let element = document.querySelector("#conway");
 
-<ul class="reference">
+    
+    let dim = 5;
+    let scale_y = 8; // should be a multiple of four
+    let frame_count = 4;
+    let frame_time = 4;
 
-<li>[ <a href="https://dr.lib.iastate.edu/handle/20.500.12876/jw270xxv">url</a> | <a href="https://dr.lib.iastate.edu/bitstreams/d0e99d41-2f29-433b-b40b-6b4b57dfcbf7/download">pdf</a> ] - Hugh Potter.  Programs and Proofs: A Molecular Toolchain.  <span class="reftitle">Iowa State Graduate Theses and Dissertations</span>, 2022.
+    let x_ratio = 2;
+    
+    let pattern = [ // not a simulation, sorry!
+        [
+            "     ",
+            " ### ",
+            " #   ",
+            "  #  ",
+            "     "
+        ], [
+            "  #  ",
+            " ##  ",
+            " # # ",
+            "     ",
+            "     "
+        ], [
+            " ##  ",
+            " # # ",
+            " #   ",
+            "     ",
+            "     "
+        ], [
+            " ##  ",
+            "##   ",
+            "  #  ",
+            "     ",
+            "     "
+        ],
+    ];
 
-<li>[ <a href="https://doi.org/10.4230/LIPIcs.DNA.2020.5">doi</a> | <a href="https://arxiv.org/abs/1909.05390">arxiv</a> | <a href="https://arxiv.org/pdf/1909.05390">pdf</a>] - James I. Lathrop, Jack H. Lutz, Robyn R. Lutz, Hugh D. Potter, and Matthew R. Riley. Population-induced phase transitions and the verification of chemical reaction networks. In <span class="reftitle">Proceedings of the 26th International Conference on DNA Computing and Molecular Programming (DNA 2020, University of Oxford-virtual, Oxford, UK, September 14-17, 2020)</span>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2020.</li>
+    let scale_x = x_ratio * scale_y;
+    let res_x = dim * scale_x;
+    let res_y = dim * scale_y;
 
-<li>[ <a href="https://doi.org/10.4230/LIPIcs.DNA.2020.6">doi</a> ] - Titus H. Klinge, James I. Lathrop, Sonia Moreno, Hugh D. Potter, Narun K. Raman, and Matthew R. Riley. ALCH: An imperative language for chemical reaction network-controlled tile assembly. In <span class="reftitle">Proceedings of the 26th International Conference on DNA Computing and Molecular Programming (DNA 2020, University of Oxford-virtual, Oxford, UK, September 14-17, 2020)</span>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2020.</li>
+    let cycle_time = frame_time * 4;
 
-<li>[ <a href="https://doi.org/10.1145/3295740">doi</a> | <a href="https://arxiv.org/abs/1710.09494">arxiv</a> | <a href="https://arxiv.org/pdf/1710.09494">pdf</a> ] - Samuel J. Ellis, Titus H. Klinge, James I. Lathrop, Jack H. Lutz, Robyn R. Lutz, Andrew S. Miner, and Hugh D. Potter. Runtime fault detection in programmed molecular systems. In <span class="reftitle">ACM Transactions on Software Engineering and Methodology</span>, volume 28, 2019.</li>
+    time = 0
+    setInterval(draw, 400);
 
-<li>[ <a href="https://doi.org/10.31274/etd-180810-5421">doi</a> | <a href="https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=6800&context=etd">pdf</a> ] - Hugh Potter.  Ab initio nuclear structure calculations with GPU acceleration.  <span class="reftitle">Iowa State Graduate Theses and Dissertations</span>, 2016.
+    function mod(a, b) {
+        return ((a % b) + b) % b;
+    }
 
-<li>[ <a href="https://arxiv.org/abs/1507.04693">arxiv</a> | <a href="https://arxiv.org/pdf/1505.07218">pdf</a> ] - James P. Vary, Pieter Maris, Hugh Potter, Mark A. Caprio, Robin Smith, Sven Binder, Angelo Calci, Sebastian Fischer, Joachim Langhammer, Robert Roth, Hasan Metin Aktulga, Esmond Ng, Chao Yang, Dossay Oryspayev, Masha Sosonkina, Erik Saule, Ümit Çatalyürek.  Ab Initio No Core Shell Model - Recent Results and Further Prospects.  In <span class="reftitle">Proc. Nuclear Theory in the Supercomputing Era - 2014 (NTSE-2014, Khabarovsk, Russia, 23-27 June, 2014)</span>.  Eds. A. M. Shirokov and A. I. Mazur.  Pacific National University, Khabarovsk, Russia, 2015.</li>
+    function expand(offsetx, offsety, frame) {
+        let s = "<pre>"; //todo: probably a way to do this that doesn't detour through the html parser
+        for(let i = 0; i < res_y; i++) {
+            for(let j = 0; j < res_x; j++) {
+                let ioffset = mod(i - offsety, res_y);
+                let joffset = mod(j - offsetx, res_x);
+                
+                let icoord = Math.floor(ioffset/scale_y);
+                let jcoord = Math.floor(joffset/scale_x);
 
-<li>[ <a href="https://doi.org/10.1103/PhysRevC.93.044002">doi</a> | <a href="https://arxiv.org/abs/1505.07218">arxiv</a> | <a href="https://arxiv.org/pdf/1505.07218">pdf</a> ] - S. Binder, A. Calci, E. Epelbaum, R. J. Furnstahl, J. Golak, K. Hebeler, H. Kamada, H. Krebs, J. Langhammer, S. Liebig, P. Maris, U. -G. Meißner, D. Minossi, A. Nogga, H. Potter, R. Roth, R. Skibinski, K. Topolnicki, J. P. Vary, H. Witala.  Few-nucleon systems with state-of-the-art chiral nucleon-nucleon forces.  In <span class="reftitle">Physical Review C</span>, volume 93, 2016.</li>
+                s += pattern[frame][icoord][jcoord];
+            }
+            s += "\n";
+        }
+        s += "</pre>";
 
-<li>[ <a href="https://arxiv.org/abs/1412.5989">arxiv</a> | <a href="https://arxiv.org/pdf/1412.5989">pdf</a> ] - Hugh Potter, Dossay Oryspayev, Pieter Maris, Masha Sosonkina, James Vary, Sven Binder, Angelo Calci, Joachim Langhammer, Robert Roth, Ümit Çatalyürek, Erik Saule.  Accelerating Ab Inition Nuclear Physics Calculations wth GPUs.  In <span class="reftitle">Proc. Nuclear Theory in the Supercomputing Era - 2013 (NTSE-2013, Ames, IA, USA, 13-17 May, 2013)</span>. 2014.</li>
+        return s;
+    }
 
-<li>[ <a href="https://doi.org/10.1016/j.physletb.2014.10.020">doi</a> | <a href="https://arxiv.org/abs/1406.1160">arxiv</a> | <a href="https://arxiv.org/pdf/1406.1160">pdf</a> ] - H. D. Potter, S. Fischer, P. Maris, J. P. Vary, S. Binder, A. Calci, J. Langhammer, R. Roth.  Ab Initio study of neutron drops with chiral Hamiltonians.  In <span class="reftitle">Physics Letters B</span>, volume 739, 2014.</li>
-</ul>
+    function draw() {
+        let frame = mod(Math.floor(time/frame_time), frame_count);
+
+        let offset = Math.floor(scale_y * mod(time, cycle_time) / cycle_time);
+
+        element.innerHTML = expand(x_ratio*offset, offset, frame);
+        time++;
+
+    }
+
+
+</script>
 
 
 
-<p>
-
-</div>
-
-</div>
-</div>
-
+            <div class="content-inner-last"></div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,22 @@
+/* post listing */
+.blog-listing {
+    margin-bottom: 20px;
+}
+
+.blog-listing-title {
+    font-size: 1.2em;
+}
+
+.blog-listing-date {
+    color: var(--mid-light);
+    font-size: 0.8em;
+}
+
+/* single entry */
+/* .blog-post-title {
+} */
+
+.blog-post-date {
+    color: var(--mid-light);
+    font-size: 1.2em;
+}

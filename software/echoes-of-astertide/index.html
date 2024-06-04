@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh Potter</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+<link rel="stylesheet" href="/styles_software.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="nameplate">Hugh Potter</div>
+            <div class="epithet">Gamedev, Nanotech, Rust, and Music</div>
+            <a href="https://example.com"><div class="navbar-button">Home</div></a>
+            <a href="https://example.com/software/"><div class="navbar-button">Software</div></a>
+            <a href="https://example.com/academics/"><div class="navbar-button">Academics</div></a>
+            <a href="https://example.com/blog/"><div class="navbar-button">Blog</div></a>
+            <a href="https://example.com/about_me/"><div class="navbar-button">About Me</div></a>
+        </div>
+    </div>
+    <div class="content-outer">
+        <div class="content-inner">
+            
+<h1 class="software-post-title">
+    Echoes of Astertide
+</h1>
+
+
+<div class="software-post-link"><i>(link is forthcoming)</i></div>
+
+
+<div class="tech-list">
+    
+    <a href="/tech/rust"><div class="tech-post">Rust</div></a>
+    
+</div>
+
+
+
+<p>Echoes of Astertide is my entry into the colony-defense genre.  Build a city, and then defend it from waves of enemies!  I plan make towers the primary defensive mechanic and deemphasize troop movement; with the resulting extra complexity budget, I plan to focus on implementing a compelling economic system somewhat in the vein of a 4X game.  We're currently in early development, with a small cross-section of basic features implemented.</p>
+<p>I made the initial version in Unity, but pivoted to Rust in response to the Unity install fee business in 2023.  It has certainly been an experience rebuilding everything from the ground up without all of Unity's features!  I've been using the <a href="https://crates.io/crates/hecs">wgpu</a> low-level rendering library, which has been a great learning experience.</p>
+<p>I'm proud to say I've got a lot of the basic functionality working:</p>
+<ul>
+<li>render the map</li>
+<li>build buildings</li>
+<li>collect income</li>
+</ul>
+<p>Basically 75% of the way there, am I right?</p>
+<p>I'm a strong proponent of the model-view-controller architecture for games, especially when they have complicated state, as in the city-builder and 4X genres.
+I've built Echoes of Astertide on top of a completely decoupled model that encodes and simulates all game-relevant state, based on the <a href="https://crates.io/crates/hecs">hecs</a> ECS library.</p>
+
+
+            <div class="content-inner-last"></div>
+        </div>
+    </div>
+</body>
+</html>
