@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://example.com/</loc>
+        <loc>https://hughpotter.net/</loc>
     </url>
     <url>
-        <loc>https://example.com/about_me/</loc>
+        <loc>https://hughpotter.net/about_me/</loc>
     </url>
     <url>
-        <loc>https://example.com/academics/</loc>
+        <loc>https://hughpotter.net/academics/</loc>
     </url>
     <url>
-        <loc>https://example.com/blog/</loc>
+        <loc>https://hughpotter.net/blog/</loc>
     </url>
     <url>
-        <loc>https://example.com/blog/welcome/</loc>
+        <loc>https://hughpotter.net/blog/welcome/</loc>
         <lastmod>2024-06-04</lastmod>
     </url>
     <url>
-        <loc>https://example.com/shaderunner/</loc>
+        <loc>https://hughpotter.net/shaderunner/</loc>
     </url>
     <url>
-        <loc>https://example.com/software/</loc>
+        <loc>https://hughpotter.net/software/</loc>
     </url>
     <url>
-        <loc>https://example.com/software/alch/</loc>
+        <loc>https://hughpotter.net/software/alch/</loc>
         <lastmod>2024-04-08</lastmod>
     </url>
     <url>
-        <loc>https://example.com/software/echoes-of-astertide/</loc>
+        <loc>https://hughpotter.net/software/echoes-of-astertide/</loc>
         <lastmod>2024-04-08</lastmod>
     </url>
     <url>
-        <loc>https://example.com/software/mfdn/</loc>
+        <loc>https://hughpotter.net/software/mfdn/</loc>
         <lastmod>2024-04-08</lastmod>
     </url>
     <url>
-        <loc>https://example.com/software/sturdyhex/</loc>
+        <loc>https://hughpotter.net/software/sturdyhex/</loc>
         <lastmod>2024-04-08</lastmod>
     </url>
     <url>
-        <loc>https://example.com/software/terracraft/</loc>
+        <loc>https://hughpotter.net/software/terracraft/</loc>
         <lastmod>2024-04-08</lastmod>
     </url>
     <url>
-        <loc>https://example.com/tags/</loc>
+        <loc>https://hughpotter.net/tags/</loc>
     </url>
     <url>
-        <loc>https://example.com/tags/academic/</loc>
+        <loc>https://hughpotter.net/tags/academic/</loc>
     </url>
     <url>
-        <loc>https://example.com/tags/gamedev/</loc>
+        <loc>https://hughpotter.net/tags/gamedev/</loc>
     </url>
     <url>
-        <loc>https://example.com/tags/voxel/</loc>
+        <loc>https://hughpotter.net/tags/voxel/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/</loc>
+        <loc>https://hughpotter.net/tech/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/c-c/</loc>
+        <loc>https://hughpotter.net/tech/c-c/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/c/</loc>
+        <loc>https://hughpotter.net/tech/c/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/cuda/</loc>
+        <loc>https://hughpotter.net/tech/cuda/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/fortran/</loc>
+        <loc>https://hughpotter.net/tech/fortran/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/mpi/</loc>
+        <loc>https://hughpotter.net/tech/mpi/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/openmp/</loc>
+        <loc>https://hughpotter.net/tech/openmp/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/rust/</loc>
+        <loc>https://hughpotter.net/tech/rust/</loc>
     </url>
     <url>
-        <loc>https://example.com/tech/unity/</loc>
+        <loc>https://hughpotter.net/tech/unity/</loc>
     </url>
 </urlset>
