@@ -23,6 +23,7 @@
     padding-left: 4px;
     padding-right: 4px;
     margin-right: 4px;
+    white-space: nowrap;
 }
 
 .tech-post {
