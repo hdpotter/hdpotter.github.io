@@ -82,12 +82,12 @@ body {
     padding: 0px;
 
     scrollbar-color: var(--mid-light) var(--navbar);
+    container-type: size;
 }
 
 .content-inner {
     width: 800px;
-    margin: 20px;
-    container-type: size;
+    margin: 4cqw;
 }
 
 .content-bottom-spacer {
