@@ -29,9 +29,9 @@ body {
 }
 
 .navbar {
-    display: flex;
-    flex-direction:column;
     background-color: var(--navbar);
+    flex-direction:column;
+    display: flex;
     width: var(--navbar-width);
 }
 
@@ -86,14 +86,13 @@ body {
 
 .content-inner {
     width: 800px;
-    padding: 20px;
+    margin: 20px;
+    container-type: size;
 }
 
 .content-bottom-spacer {
     height: 200px;
 }
-
-
 
 a:link, a:visited
 {
@@ -105,4 +104,62 @@ a:hover
 {
 	color: var(--link-hover);
     text-decoration: none;
+}
+
+/* bar on top for low-width displays */
+
+.navbar-top {
+    background-color: var(--navbar);
+    flex-direction: column;
+    display: none;
+    width: 100%;
+}
+
+.navbar-top-upper {
+    display: flex;
+    flex-direction: row;
+}
+
+.nameplate-top {
+    font-size: 8vw;
+    font-weight: bold;
+
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.epithet-top {
+    font-size: 5vw;
+    width: 50%;
+}
+
+.navbar-top-lower {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navbar-button-top {
+    font-size: 4.5vw;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-button-top:hover {
+    background-color: var(--background);
+}
+
+@media (width < 600px) {
+    .navbar {
+        display: none !important;
+    }
+    .navbar-top {
+        display: flex !important;
+    }
+    body {
+        flex-direction: column !important;
+    }
 }
