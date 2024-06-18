@@ -1,5 +1,5 @@
 .ascii-art {
     width: 100%;
     font-family: monospace;
-    font-size: 2cqw;
+    font-size: min(2cqw, 0.8em);
 }
